@@ -22,8 +22,8 @@ spec:
         app: eks-example
     spec:
       containers:
-      - name: eks-example
-        image: public.ecr.aws/g0k8y5p3/helloworld:latest
+      - name: eks-example 
+        image: public.ecr.aws/g0k8y5p3/helloworld:latest 
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
