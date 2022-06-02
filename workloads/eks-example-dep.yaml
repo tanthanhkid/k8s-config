@@ -23,17 +23,9 @@ spec:
     spec:
       containers: 
       - name: eks-example 
-        image: 441656060858.dkr.ecr.ap-southeast-1.amazonaws.com/eks-example:978893f0
+        image: public.ecr.aws/g0k8y5p3/helloworld:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
           name: http
-          protocol: TCP
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
+          protocol: TCP 
