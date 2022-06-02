@@ -8,6 +8,7 @@ metadata:
 spec:
   selector:
     app: eks-example
+  type: LoadBalancer
   ports:
    -  protocol: TCP
       port: 80
