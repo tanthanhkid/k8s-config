@@ -21,7 +21,7 @@ spec:
       labels:
         app: eks-example
     spec:
-      containers:
+      containers: 
       - name: eks-example 
         image: 441656060858.dkr.ecr.ap-southeast-1.amazonaws.com/eks-example:978893f0
         imagePullPolicy: IfNotPresent
