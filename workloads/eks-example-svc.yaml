@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: public.ecr.aws/g0k8y5p3/helloworld:latest
+        image: public.ecr.aws/aws-containers/hello-eks-anywhere:latest
         ports:
         - containerPort: 80
         env:
