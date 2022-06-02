@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eks-example
+  name: eksa-example
   labels:
-    app: eks-example
+    app: eksa-example
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: eks-example
+      app: eksa-example
   template:
     metadata:
       labels:
-        app: eks-example
+        app: eksa-example
     spec:
       containers:
       - name: hello
@@ -40,14 +40,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: eks-example
-  namespace: eks-example
+  name: eksa-example
+  namespace: eksa-example
   labels:
-    app: eks-example
+    app: eksa-example
 spec:
   type: NodePort
   selector:
-    app: eks-example
+    app: eksa-example
   ports:
    -  protocol: TCP
       port: 80
